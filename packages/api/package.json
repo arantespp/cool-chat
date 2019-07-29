@@ -1,0 +1,8 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "scripts": {
+    "create-stack": "aws cloudformation create-stack --profile personal --stack-name CoolChatAPI --template-body file://cloudformation.yml --region us-east-1",
+    "update-stack": "aws cloudformation update-stack --profile personal --stack-name CoolChatAPI --template-body file://cloudformation.yml --region us-east-1"
+  }
+}

@@ -1,0 +1,67 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  AppSyncGraphQLApi:
+    Type: AWS::AppSync::GraphQLApi
+    Description: AppSync GraphQLApi
+    Properties:
+      AuthenticationType: API_KEY
+      Name: CoolChatAPI
+
+  ### Definition of SchemaGraphQL
+  AppSyncGraphQLSchema:
+    Type: AWS::AppSync::GraphQLSchema
+    DependsOn: AppSyncGraphQLApi
+    Properties:
+      ApiId: !GetAtt AppSyncGraphQLApi.ApiId
+      Definition: |
+        type Message {
+          author: String!
+          dateTime: AWSDateTime!
+          content: String!
+        }
+
+        type Query {
+          getOldMessages: [Message!]
+          
+        }
+
+        schema {
+          query: Query
+          # mutation: Mutation
+        }
+
+  GetOldMessagesAppSyncResolver:
+    Type: AWS::AppSync::Resolver
+    DependsOn: AppSyncGraphQLSchema
+    Properties:
+      ApiId: !GetAtt AppSyncGraphQLApi.ApiId
+      FieldName: getOldMessages
+      TypeName: Query
+      DataSourceName: !GetAtt NoneAppSyncDataSource.Name
+      RequestMappingTemplate: |
+        {
+          "version": "2017-02-28",
+          "payload": ""
+        }
+      ResponseMappingTemplate: |
+        #set($messages = [])
+        $util.qr($messages.add({
+          "author": "Pedro",
+          "content": "Hello World",
+          "dateTime": "2019-07-27T10:06"
+        }))
+        $util.qr($messages.add({
+          "author": "Paulo",
+          "content": "Olá opensanca",
+          "dateTime": "2019-07-27T10:06"
+        }))
+        $util.toJson($messages)
+
+  NoneAppSyncDataSource:
+    Type: AWS::AppSync::DataSource
+    Properties:
+      ApiId: !GetAtt AppSyncGraphQLApi.ApiId
+      Name: NoneAppSyncDataSource
+      Description: AppSync none data source
+      Type: NONE
