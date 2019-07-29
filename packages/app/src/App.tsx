@@ -1,24 +1,11 @@
 import React from 'react';
 
-import gql from 'graphql-tag';
-
-import { client } from './client';
+import { useAllMessages } from './functionalities';
 
 const App: React.FC = () => {
-  client
-    .query({
-      query: gql`
-        query {
-          getOldMessages {
-            author
-            dateTime
-            content
-          }
-        }
-      `
-    })
-    .then(console.log)
-    .catch(console.log);
+  const { allMessages, loading } = useAllMessages();
+
+  console.log(allMessages, loading);
 
   return <span>oi</span>;
 };

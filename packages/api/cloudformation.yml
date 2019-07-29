@@ -23,12 +23,21 @@ Resources:
 
         type Query {
           getOldMessages: [Message!]
-          
+        }
+
+        type Mutation {
+          sendMessage(author: String!, content: String!): Message!
+        }
+
+        type Subscription {
+          sentMessage: Message
+          @aws_subscribe(mutations: ["sendMessage"])
         }
 
         schema {
           query: Query
-          # mutation: Mutation
+          mutation: Mutation
+          subscription: Subscription
         }
 
   GetOldMessagesAppSyncResolver:
@@ -49,14 +58,31 @@ Resources:
         $util.qr($messages.add({
           "author": "Pedro",
           "content": "Hello World",
-          "dateTime": "2019-07-27T10:06"
+          "dateTime": "2019-07-27T10:06:00Z"
         }))
         $util.qr($messages.add({
           "author": "Paulo",
           "content": "Olá opensanca",
-          "dateTime": "2019-07-27T10:06"
+          "dateTime": "2019-07-27T10:06:02Z"
         }))
         $util.toJson($messages)
+
+  SendMessageAppSyncResolver:
+    Type: AWS::AppSync::Resolver
+    DependsOn: AppSyncGraphQLSchema
+    Properties:
+      ApiId: !GetAtt AppSyncGraphQLApi.ApiId
+      FieldName: sendMessage
+      TypeName: Mutation
+      DataSourceName: !GetAtt NoneAppSyncDataSource.Name
+      RequestMappingTemplate: |
+        {
+          "version": "2017-02-28",
+          "payload": $utils.toJson($ctx.args)
+        }
+      ResponseMappingTemplate: |
+        #set($ctx.result.dateTime = $util.time.nowISO8601())
+        $util.toJson($ctx.result)
 
   NoneAppSyncDataSource:
     Type: AWS::AppSync::DataSource

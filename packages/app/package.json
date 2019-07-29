@@ -7,8 +7,11 @@
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.5",
     "aws-appsync": "^1.8.1",
+    "aws-appsync-react": "^1.2.9",
     "graphql-tag": "^2.10.1",
+    "localforage": "^1.7.3",
     "react": "^16.8.6",
+    "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "typescript": "3.5.3"
