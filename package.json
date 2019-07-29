@@ -1,0 +1,10 @@
+{
+  "name": "cool-chat",
+  "version": "1.0.0",
+  "author": "Pedro Arantes",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}
