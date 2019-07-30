@@ -1,13 +1,9 @@
 import React from 'react';
 
-import { useAllMessages } from './functionalities';
+import Chat from './pages/Chat';
 
 const App: React.FC = () => {
-  const { allMessages, loading } = useAllMessages();
-
-  console.log(allMessages, loading);
-
-  return <span>oi</span>;
+  return <Chat />;
 };
 
 export default App;

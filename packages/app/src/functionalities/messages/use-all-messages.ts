@@ -18,7 +18,17 @@ export const useAllMessages = () => {
 
   useEffect(() => {
     if (sentMessage) {
-      setAllMessages(all => [...all, sentMessage]);
+      setAllMessages(all => {
+        const isSameMessage = ({ author, content, dateTime }: Message) =>
+          author === sentMessage.author &&
+          content === sentMessage.content &&
+          dateTime === sentMessage.dateTime;
+        const messageAlreadySaved = all.find(isSameMessage);
+        if (messageAlreadySaved) {
+          return all;
+        }
+        return [...all, sentMessage];
+      });
     }
   }, [sentMessage]);
 

@@ -31,6 +31,7 @@ export const useSentMessage = () => {
       })
       .subscribe(
         ({ data }) => {
+          console.log('AAAAAAAa');
           setSentMessage(data.sentMessage);
         },
         error => console.log(error)
