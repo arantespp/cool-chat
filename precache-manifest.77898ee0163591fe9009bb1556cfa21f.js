@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d841892018325e4e94b144bf8b10d74",
+    "revision": "ea4dcd6c91a55d891834d1c582128f5e",
     "url": "/cool-chat/index.html"
   },
   {
-    "revision": "5755a4ff4456768d6877",
+    "revision": "626eb0508d5d581c5463",
     "url": "/cool-chat/static/css/main.1248f92f.chunk.css"
   },
   {
-    "revision": "ca818d9b5543e0c7086b",
-    "url": "/cool-chat/static/js/2.4c9ace12.chunk.js"
+    "revision": "956ef7d28053b6f2fcf4",
+    "url": "/cool-chat/static/js/2.ce2b0f0d.chunk.js"
   },
   {
-    "revision": "5755a4ff4456768d6877",
-    "url": "/cool-chat/static/js/main.02528280.chunk.js"
+    "revision": "626eb0508d5d581c5463",
+    "url": "/cool-chat/static/js/main.682df5a6.chunk.js"
   },
   {
     "revision": "46b850106df1db2a7273",
