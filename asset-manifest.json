@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1248f92f.chunk.css",
-    "main.js": "/static/js/main.7c6e879f.chunk.js",
-    "main.js.map": "/static/js/main.7c6e879f.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.5f16898e.chunk.js": "/static/js/2.5f16898e.chunk.js",
-    "static/js/2.5f16898e.chunk.js.map": "/static/js/2.5f16898e.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.c2a7a3c1e0452fa86542e168fe172200.js": "/precache-manifest.c2a7a3c1e0452fa86542e168fe172200.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.1248f92f.chunk.css.map": "/static/css/main.1248f92f.chunk.css.map"
+    "main.css": "/cool-chat/static/css/main.1248f92f.chunk.css",
+    "main.js": "/cool-chat/static/js/main.ccea1689.chunk.js",
+    "main.js.map": "/cool-chat/static/js/main.ccea1689.chunk.js.map",
+    "runtime~main.js": "/cool-chat/static/js/runtime~main.84c17bdd.js",
+    "runtime~main.js.map": "/cool-chat/static/js/runtime~main.84c17bdd.js.map",
+    "static/js/2.2ac4d0c0.chunk.js": "/cool-chat/static/js/2.2ac4d0c0.chunk.js",
+    "static/js/2.2ac4d0c0.chunk.js.map": "/cool-chat/static/js/2.2ac4d0c0.chunk.js.map",
+    "index.html": "/cool-chat/index.html",
+    "precache-manifest.1dc35e0a3234976cd84589d3d5072f77.js": "/cool-chat/precache-manifest.1dc35e0a3234976cd84589d3d5072f77.js",
+    "service-worker.js": "/cool-chat/service-worker.js",
+    "static/css/main.1248f92f.chunk.css.map": "/cool-chat/static/css/main.1248f92f.chunk.css.map"
   }
 }
