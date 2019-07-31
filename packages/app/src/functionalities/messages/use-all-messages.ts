@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useGetOldMessages } from './use-get-old-messages';
 import { useSentMessage } from './use-sent-message';
 
-import { Message } from '../interfaces';
+import { Message } from './interfaces/Message';
 
 export const useAllMessages = () => {
   const { data, loading } = useGetOldMessages();

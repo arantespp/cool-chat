@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import gql from 'graphql-tag';
 
-import { Message } from '../interfaces';
+import { Message } from './interfaces/Message';
 
 import { client } from '../client';
 
@@ -31,7 +31,6 @@ export const useSentMessage = () => {
       })
       .subscribe(
         ({ data }) => {
-          console.log('AAAAAAAa');
           setSentMessage(data.sentMessage);
         },
         error => console.log(error)

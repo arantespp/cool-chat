@@ -4,7 +4,7 @@ import gql from 'graphql-tag';
 
 import { client } from '../client';
 
-import { Message } from '../interfaces';
+import { Message } from './interfaces/Message';
 
 interface Response {
   getOldMessages: Message[];

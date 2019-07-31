@@ -8,6 +8,8 @@ interface Props {
 }
 
 const Container = styled.div`
+  max-width: 700px;
+  margin: auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
