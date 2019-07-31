@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cool-chat/precache-manifest.08cf3735193bb9f04cd621eb19a67192.js"
+  "/cool-chat/precache-manifest.d3271bc746c628574a2223f664a5e7ad.js"
 );
 
 self.addEventListener('message', (event) => {

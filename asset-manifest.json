@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cool-chat/static/css/main.1248f92f.chunk.css",
-    "main.js": "/cool-chat/static/js/main.f3af0139.chunk.js",
-    "main.js.map": "/cool-chat/static/js/main.f3af0139.chunk.js.map",
+    "main.js": "/cool-chat/static/js/main.0ce80c27.chunk.js",
+    "main.js.map": "/cool-chat/static/js/main.0ce80c27.chunk.js.map",
     "runtime~main.js": "/cool-chat/static/js/runtime~main.84c17bdd.js",
     "runtime~main.js.map": "/cool-chat/static/js/runtime~main.84c17bdd.js.map",
     "static/js/2.ce2b0f0d.chunk.js": "/cool-chat/static/js/2.ce2b0f0d.chunk.js",
     "static/js/2.ce2b0f0d.chunk.js.map": "/cool-chat/static/js/2.ce2b0f0d.chunk.js.map",
     "index.html": "/cool-chat/index.html",
-    "precache-manifest.08cf3735193bb9f04cd621eb19a67192.js": "/cool-chat/precache-manifest.08cf3735193bb9f04cd621eb19a67192.js",
+    "precache-manifest.d3271bc746c628574a2223f664a5e7ad.js": "/cool-chat/precache-manifest.d3271bc746c628574a2223f664a5e7ad.js",
     "service-worker.js": "/cool-chat/service-worker.js",
     "static/css/main.1248f92f.chunk.css.map": "/cool-chat/static/css/main.1248f92f.chunk.css.map"
   }
