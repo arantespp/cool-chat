@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cool-chat/static/css/main.1248f92f.chunk.css",
-    "main.js": "/cool-chat/static/js/main.a3e8f353.chunk.js",
-    "main.js.map": "/cool-chat/static/js/main.a3e8f353.chunk.js.map",
+    "main.js": "/cool-chat/static/js/main.02528280.chunk.js",
+    "main.js.map": "/cool-chat/static/js/main.02528280.chunk.js.map",
     "runtime~main.js": "/cool-chat/static/js/runtime~main.84c17bdd.js",
     "runtime~main.js.map": "/cool-chat/static/js/runtime~main.84c17bdd.js.map",
-    "static/js/2.2ac4d0c0.chunk.js": "/cool-chat/static/js/2.2ac4d0c0.chunk.js",
-    "static/js/2.2ac4d0c0.chunk.js.map": "/cool-chat/static/js/2.2ac4d0c0.chunk.js.map",
+    "static/js/2.4c9ace12.chunk.js": "/cool-chat/static/js/2.4c9ace12.chunk.js",
+    "static/js/2.4c9ace12.chunk.js.map": "/cool-chat/static/js/2.4c9ace12.chunk.js.map",
     "index.html": "/cool-chat/index.html",
-    "precache-manifest.1f7a91a82c519314243cba6e90343136.js": "/cool-chat/precache-manifest.1f7a91a82c519314243cba6e90343136.js",
+    "precache-manifest.960adc2087968b96a3c0e661794e282d.js": "/cool-chat/precache-manifest.960adc2087968b96a3c0e661794e282d.js",
     "service-worker.js": "/cool-chat/service-worker.js",
     "static/css/main.1248f92f.chunk.css.map": "/cool-chat/static/css/main.1248f92f.chunk.css.map"
   }
