@@ -1,6 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
+  "homepage": "https://arantespp.github.io/cool-chat/",
   "dependencies": {
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-viewport": "^5.1.9",
