@@ -9,14 +9,12 @@ import { useSignIn } from '../../functionalities';
 const SignIn = () => {
   const { signIn, signedIn, loading, error } = useSignIn();
 
-  console.log('aqui');
-
   const onSubmit = useCallback((name: string) => {
     signIn(name);
   }, []);
 
   if (signedIn) {
-    return <Redirect to="/" />;
+    return <Redirect to="/chat" />;
   }
 
   return <View onSubmit={onSubmit} loading={loading} error={error} />;

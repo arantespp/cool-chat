@@ -6,15 +6,19 @@ import { User } from './interfaces/User';
 const key = 'user-data';
 
 export const useUserData = () => {
-  const [user, setUserState] = useState<User>();
+  const [user, setUserState] = useState<User>({ name: '' });
   const [error, setError] = useState<any>(null);
 
   useEffect(() => {
     localforage
       .getItem<User>(key)
-      .then(user => setUserState(user))
+      .then(user => {
+        if (user) {
+          setUserState(user);
+        }
+      })
       .catch(err => setError(err));
-  }, [user && user.name]);
+  }, [user.name]);
 
   const setUser = async (user: User) => {
     try {

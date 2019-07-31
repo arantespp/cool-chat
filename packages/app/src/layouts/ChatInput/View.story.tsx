@@ -7,7 +7,6 @@ import ChatInput from './View';
 const onSend = (content: string) =>
   new Promise<void>(resolve => {
     setTimeout(() => {
-      console.log('aqui');
       resolve();
     }, 3000);
   });

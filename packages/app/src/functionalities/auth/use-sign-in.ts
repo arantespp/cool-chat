@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { useUserData } from '../user';
 
 export const useSignIn = () => {
-  const [loading, setLoading] = useState(false);
   const { setUser, user, error } = useUserData();
+  const [loading, setLoading] = useState(false);
+  const [signedIn, setSignedIn] = useState(!!user);
+
+  useEffect(() => {
+    setSignedIn(!!user.name);
+  }, [user.name]);
 
   const signIn = async (name: string) => {
     setLoading(true);
@@ -12,5 +17,5 @@ export const useSignIn = () => {
     setLoading(false);
   };
 
-  return { signIn, error, loading, signedIn: !!user };
+  return { signIn, error, loading, signedIn };
 };
