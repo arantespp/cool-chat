@@ -41,4 +41,4 @@ const View = ({ author, content, dateTime, isYou }: Props) => {
   );
 };
 
-export default View;
+export default React.memo(View);

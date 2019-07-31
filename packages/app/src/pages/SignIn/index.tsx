@@ -10,8 +10,10 @@ const SignIn = () => {
   const { signIn, signedIn, loading, error } = useSignIn();
 
   const onSubmit = useCallback((name: string) => {
-    signIn(name);
+    signIn(name || 'anônimo');
   }, []);
+
+  console.log(signedIn);
 
   if (signedIn) {
     return <Redirect to="/chat" />;

@@ -14,6 +14,8 @@ References:
 
 ### Structuring Folders
 
+`src` folders structure:
+
 ```
 src/
 |– assets/
@@ -54,6 +56,8 @@ The application pages.
 ### Structuring Components
 
 We use the concept of container and view component here (https://reactpatterns.com/#container-component). `index.tsx` is the container and import specific functionalities from `functionalities/`. `View.tsx` is the view component which receive props from its container component.
+
+Component file stucture:
 
 ```
 Component/

@@ -31,4 +31,4 @@ const View = ({ messages, username }: Props) => {
   );
 };
 
-export default View;
+export default React.memo(View);

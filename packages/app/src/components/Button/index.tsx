@@ -8,4 +8,4 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
-export { Button };
+export default Button;

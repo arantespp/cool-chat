@@ -1,4 +1,6 @@
-export { Button } from './Button';
-export { Card } from './Card';
-export { Input } from './Input';
-export { Loading } from './Loading';
+import Button from './Button';
+import Card from './Card';
+import Input from './Input';
+import Loading from './Loading';
+
+export { Button, Card, Input, Loading };

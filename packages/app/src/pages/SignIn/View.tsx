@@ -29,9 +29,6 @@ const View = ({ onSubmit, loading }: Props) => {
 
   const onClick = () => {
     const name = inputRef.current!.value;
-    if (!name) {
-      return onSubmit('anônimo');
-    }
     return onSubmit(name);
   };
 

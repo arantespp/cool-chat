@@ -5,10 +5,13 @@ import { useUserData } from '../user';
 export const useSignIn = () => {
   const { setUser, user, error } = useUserData();
   const [loading, setLoading] = useState(false);
-  const [signedIn, setSignedIn] = useState(!!user);
+  const [signedIn, setSignedIn] = useState(!!user.name);
+
+  console.log(user);
 
   useEffect(() => {
-    setSignedIn(!!user.name);
+    console.log(!!user.name);
+    setSignedIn(() => !!user.name);
   }, [user.name]);
 
   const signIn = async (name: string) => {
