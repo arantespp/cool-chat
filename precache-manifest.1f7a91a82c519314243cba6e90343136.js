@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "635319e441c72b0a1631e5355bbea73a",
+    "revision": "fe4fbb63ae3e17dd88fac3d9e440cffd",
     "url": "/cool-chat/index.html"
   },
   {
-    "revision": "fc65a8abb56653a16f34",
+    "revision": "711fc430b67ad27593e4",
     "url": "/cool-chat/static/css/main.1248f92f.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cool-chat/static/js/2.2ac4d0c0.chunk.js"
   },
   {
-    "revision": "fc65a8abb56653a16f34",
-    "url": "/cool-chat/static/js/main.ccea1689.chunk.js"
+    "revision": "711fc430b67ad27593e4",
+    "url": "/cool-chat/static/js/main.a3e8f353.chunk.js"
   },
   {
     "revision": "46b850106df1db2a7273",
