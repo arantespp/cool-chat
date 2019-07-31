@@ -8,12 +8,17 @@ import Chat from './pages/Chat';
 import SignIn from './pages/SignIn';
 
 const App: React.FC = () => {
-  console.log(process.env.NODE_ENV);
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      basename={
+        process.env.NODE_ENV === 'production'
+          ? 'https://arantespp.github.io/cool-chat/'
+          : ''
+      }
+    >
       <Switch>
         <Route path="/chat" component={Chat} />
-        <Route path="/sign-in" component={SignIn} />
+        <Route path="/" component={SignIn} />
       </Switch>
     </BrowserRouter>
   );
